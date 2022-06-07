@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
@@ -72,6 +73,14 @@ header nav ul li{
     margin-top: 60px;
     margin-left: 20px;
     border-radius: 50%;
+}
+
+.a_header{
+    transition: all 2s;
+}
+
+.a_header:hover{
+    background-color: whitesmoke;
 }
 
 
@@ -166,12 +175,53 @@ footer{
 
 }
 
+.pizzaMenu:hover{
+    height: 450px;
+    width: 380px;
+}
+
 .pieMenu{
     padding-top: 10px;
     padding-left: 20px;
     font-size: 20px;
     width: auto;
     color: rgb(253, 33, 33);
+}
+
+/* SECCION PEDIDOS */
+
+.gridPedidos{
+    display: grid;
+    grid-template-areas: 
+    "barraNav"
+    "main"
+    "footer";
+    
+    grid-row-gap: 100px;
+}
+
+/* SECCION SERVICIOS */
+
+.gridServicios{
+    display: grid;
+    grid-template-areas: 
+    "barraNav"
+    "main"
+    "footer";
+    
+    grid-row-gap: 100px;
+}
+
+/* SECCION CONTACTO */
+
+.gridContacto{
+    display: grid;
+    grid-template-areas: 
+    "barraNav"
+    "main"
+    "footer";
+    
+    grid-row-gap: 100px;
 }
 
 h1{
