@@ -13,73 +13,43 @@
 
 <body>
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+        <div class="container-fluid">
+            <a href="../index.html">
+                <img class="imgHeader" src="../img/logo2.jpg" alt="">
+            </a>
+            <a class="navbar-brand" id="textoLogo" href="../index.html">Diávola Pizza</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+
+                    <a class="nav-link active" href="../index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="./menu.html">Menu</a>
+                    <a class="nav-link active" href="./pedidos.html">Pedidos</a>
+                    <a class="nav-link active" href="./servicios.html">Servicios</a>
+                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="gridContacto">
-
-        <header>
-
-            <figure class="logo">
-                <a href="../index.html">
-                    <img class="imgHeader" src="../img/logo2.jpg" alt="">
-                </a>
-            </figure>
-
-            <a class="textoLogo" href="../index.html">Diávola Pizza</a>
-
-            <nav>
-                <ul>
-                    <li class="a_header">
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li class="a_header">
-                        <a href="menu.html">Menu</a>
-                    </li>
-                    <li class="a_header">
-                        <a href="pedidos.html">Pedidos</a>
-                    </li>
-                    <li class="a_header">
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li class="a_header">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-
-        </header>
 
         <main>
 
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <div class="mt-3 mb-3" id="form">
+                <label for="exampleFormControlInput1" class="form-label" id="email">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Ingrese su consulta</label>
+            </div>
+            <div class="mb-4" id="form">
+                <label for="exampleFormControlTextarea1" class="form-label" id="consulta">Ingrese su consulta</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
             </div>
-
-            <!-- <form>
-                <label for="nombre_apellido">Nombre y apellido:</label>
-                <input class="ingresoFormulario" type="text" name="nombre_apellido" />
-
-                <label for="cel">Celular (inlcuir codigo de area)</label>
-                <input class="ingresoFormulario" type="number" name="cel" />
-
-                <label for="email">Email</label>
-                <input class="ingresoFormulario" type="email" name="email" />
-
-                <label for="consulta">Deje su consulta</label><br>
-                <textarea name="consulta" cols="40" rows="10"></textarea>
-
-
-                <div>Desea recibir cualquier información sobre nosotros.</div>
-                <input type="checkbox" name="acepta" id="1">
-
-                <input class="botones" type="submit" value="Enviar" />
-                <input class="botones" type="reset" value="Borrar todo" />
-                <input class="botones" type="button" value="Sin acciones" />
-
-            </form> -->
 
         </main>
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Nuosu+SIL&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&display=swap');
 
 
 *{
@@ -14,10 +14,9 @@ html{
 }
 
 body{ 
-    background-color: rgb(31, 26, 26);
- }
+    background-color: rgb(31, 26, 26);}
 
- a{
+a{
     text-decoration: none;
     font-family: 'Inconsolata';
     font-size: 2.5em;
@@ -28,52 +27,46 @@ body{
 
 /* Organizo la barra de navegacion */
 
-header{
-    width: 100%;
-    height: 50px;
-    padding: 60px 0 55px 0;
+#header{
     background-color: rgb(187, 66, 50);
     position: fixed;
     display: flex;
-    align-items: center;
+    z-index: 999;
 }
 
-header .logo{
-    padding-bottom: 60px;
-}
-
-header .textoLogo{
+#textoLogo{
     color: black;
-    width: 250px;
-    padding-left: 25px;
+    width: 300px;
+    padding-left: 10px;
     font-family: 'Inconsolata';
     font-size: 2.5em;
-    font-weight: 600;
 }
 
-header nav{
+.header #navbarNav{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-header nav ul{
+.header #navbarNav #secciones{
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
 }
 
-header nav ul li{
+.header #navbarNav #secciones li{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+#botonMenu{
+    background-color: rgb(187, 66, 50);
 }
 
 .imgHeader{
     height: 100px;
     width: 100px;
-    margin-top: 60px;
-    margin-left: 20px;
     border-radius: 50%;
 }
 
@@ -101,28 +94,9 @@ footer{
 
 /* SECCION INICIO */
 
-header{
-    grid-area: barraNav;
-}
-
-main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
-}
-
-.gridIndex{
-    display: grid;
-    grid-template-areas: 
-    "barraNav"
-    "main"
-    "footer";
-
-    grid-template-rows: 120px;
-    grid-row-gap: 20px;
-
+h1{
+    color:rgb(77, 199, 72);
+    font-family: 'Nuosu SIL';
 }
 
 
@@ -146,20 +120,17 @@ footer{
     "barraNav"
     "main"
     "footer";
-    
-    grid-row-gap: 100px;
 }
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .titulosMenu{
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 330px;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
@@ -167,33 +138,25 @@ footer{
 }
 
 .pizza{
-    width: 350px;
+    width: 50px;
 }
 
 .pizzaMenu{
     height: 400px;
     width: 330px;
-    margin-top: 0px;
-    margin-left: 20px;
-
+    /* margin-left: 20px; */
 }
-
-/* .pizzaMenu:hover{
-    height: 450px;
-    width: 380px;
-} */
 
 .pieMenu{
     padding-top: 10px;
-    padding-left: 20px;
+    width: 330px;
     font-size: 20px;
-    width: auto;
     color: rgb(253, 33, 33);
 }
 
 .precio{
     padding-top: 10px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     font-size: 25px;
     width: auto;
     color: rgb(253, 33, 33);
@@ -231,68 +194,16 @@ footer{
     "barraNav"
     "main"
     "footer";
-    
-    grid-row-gap: 100px;
 }
 
-.form-label{
-    color: white;
-    margin-top: 35px;
-    margin-left: 20px;
-}
-
-#exampleFormControlInput1{
-    width: 400px;
-    margin-left: 20px;
-}
-
-#exampleFormControlTextarea1{
-    height: 200px;
-    width: 400px;
-    margin-left: 20px;
-}
-
-
-
-
-
-
-h1{
-    color: white;
-    font-size: 32px;
-    padding-top: 80px;
-}
-
-form{
-    width: 200px;
-    padding-top: 130px;
-    padding-left: 15px;
-    color: white
-}
-
-
-/* form{
-    padding-top: 100px;
-    width: 400px;
-    color: white;
-} */
-
-/* label{
-    color: white;
-    margin: 50px;
-    padding-top: 80px;
-} */
-
-.ingresoFormulario{
-    margin: 5px 0 15px 0;
-}
-
-/* div{
-    color: white;
+#form{
     width: 450px;
-} */
-
-.botones{
-    margin: 10px;
 }
 
+#email{
+    color: white;
+}
+
+#consulta{
+    color: white;
+}
