@@ -1,0 +1,30 @@
+.pizza{
+    width: 330px;
+
+    .titulosMenu{
+        padding-top: 20px;
+        width: 100%;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(0, 168, 0);
+    }
+    .pizzaMenu{
+        height: 400px;
+        width: 330px;
+    }
+
+    .pieMenu{
+    padding-top: 10px;
+    width: 330px;
+    font-size: 20px;
+    color: rgb(253, 33, 33);
+    }
+
+    .precio{
+        padding-top: 10px;
+        font-size: 25px;
+        width: auto;
+        color: rgb(253, 33, 33);
+    } 
+}
