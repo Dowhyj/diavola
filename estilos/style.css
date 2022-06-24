@@ -40,13 +40,23 @@ a {
 }
 
 footer {
-  background-color: rgb(77, 199, 72);
+  background-color: rgb(187, 66, 50);
   width: 100%;
 }
 
-#instagram {
-  color: black;
-  text-decoration: underline;
+.btn--instagram {
+  background-color: #C25E30;
+}
+
+.btn--facebook {
+  background-color: #3a5795;
+}
+
+.boton, .btn--instagram .btn--facebook {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-weight: bolder;
 }
 
 .pizza {
@@ -60,10 +70,6 @@ footer {
   text-align: center;
   color: rgb(0, 168, 0);
 }
-.pizza .pizzaMenu {
-  height: 400px;
-  width: 330px;
-}
 .pizza .pieMenu {
   padding-top: 10px;
   width: 330px;
@@ -75,6 +81,11 @@ footer {
   font-size: 25px;
   width: auto;
   color: rgb(253, 33, 33);
+}
+
+.pizzaMenu {
+  height: 400px;
+  width: 330px;
 }
 
 .formContacto {
