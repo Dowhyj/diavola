@@ -9,10 +9,10 @@
         text-align: center;
         color: rgb(0, 168, 0);
     }
-    .pizzaMenu{
-        height: 400px;
-        width: 330px;
-    }
+    // .pizzaMenu{
+    //     height: 400px;
+    //     width: 330px;
+    // }
 
     .pieMenu{
     padding-top: 10px;
@@ -27,4 +27,13 @@
         width: auto;
         color: rgb(253, 33, 33);
     } 
+}
+
+@mixin sizes ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+.pizzaMenu{
+    @include sizes(400px, 330px)
 }
