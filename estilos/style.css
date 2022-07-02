@@ -44,19 +44,9 @@ footer {
   width: 100%;
 }
 
-.btn--instagram {
-  background-color: #C25E30;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.boton, .btn--instagram .btn--facebook {
-  width: 250px;
-  height: 100px;
-  text-align: center;
-  font-weight: bolder;
+#instagram {
+  color: black;
+  text-decoration: underline;
 }
 
 .pizza {

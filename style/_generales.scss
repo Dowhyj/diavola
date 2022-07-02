@@ -41,35 +41,12 @@ a {
     border-radius: 50%;
 }
 
-footer{
+footer {
     background-color: rgb(187, 66, 50);
     width: 100%
 }
 
-// #instagram{
-//     color: black;
-//     text-decoration: underline;
-// }
-
-$redes:(
-    instagram: #C25E30,
-    facebook: #3a5795,
-);
-
-@each $red, $color in $redes{
-    .btn--#{$red}{
-        background-color: $color
-    }
-
-}
-
-.boton{
-    width: 250px;
-    height: 100px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-.btn--instagram .btn--facebook{
-    @extend .boton;
+#instagram {
+    color: black;
+    text-decoration: underline;
 }
