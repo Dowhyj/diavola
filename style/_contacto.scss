@@ -1,7 +1,30 @@
-.formContacto{
-    margin-top: 20px;
-    padding-left: 30px;
+.tituloContacto{
+    margin-top: 27px;
 
+    grid-area: titulo;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.gridContacto{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "main"
+    "footer";
+}
+
+
+.formContacto{
+    margin: 20px 0 20px 0;
+    padding-left: 25px;
+    width: 500px;
 
     #form{
         width: 450px;
