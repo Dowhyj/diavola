@@ -26,7 +26,7 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse xl-d-flex justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
 
                     <a class="nav-link active" href="../index.html">Home</a>
@@ -43,20 +43,47 @@
 
     <div class="gridPedidos">
 
-        <main>
+        <h1 class="h1Pedidos d-flex justify-content-center mt-3">Realiza tu pedido</h1>
 
-            <h1>Acá se tomarán los pedidos</h1>
+        <main class="d-flex justify-content-center">
+
+            <section class="formContacto border border-3 border-danger rounded-3">
+
+                <div class="mt-4 mb-3" id="form">
+                    <label for="exampleFormControlInput1" class="form-label" id="titContacto">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="mb-3" id="form">
+                    <label for="exampleFormControlInput1" class="form-label" id="titContacto">Apellido</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="mb-3" id="form">
+                    <label for="exampleFormControlInput1" class="form-label" id="titContacto">Celular</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1">
+                </div>
+
+                <div class="mb-3" id="form">
+                    <label for="exampleFormControlInput1" class="form-label" id="titContacto">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-4" id="form">
+                    <label for="exampleFormControlTextarea1" class="form-label" id="titContacto">Ingrese su pedido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Margarita x2 Pesto x1"></textarea>
+                </div>
+
+                <div class="mb-4">
+                    <button type="submit" class="btn btn-primary border border-success bg-success">Realizar pedido</button>
+                </div>
+
+            </section>
 
         </main>
 
         <footer>
             <h2>Encontranos en</h2>
-            <div>
-                <input type="button" value="Instagram" class="btn--instagram">
-            </div>
-            <div>
-                <input type="button" value="Facebook" class="btn--facebook">
-            </div>
         </footer>
 
     </div>

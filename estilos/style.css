@@ -78,6 +78,45 @@ footer {
   width: 330px;
 }
 
+.h1Pedidos {
+  grid-area: titulo;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.gridPedidos {
+  display: grid;
+  grid-template-areas: "titulo" "main" "footer";
+}
+
+.h1Servicio {
+  grid-area: titulo;
+}
+
+p {
+  grid-area: parrafo;
+  color: white;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.gridServicios {
+  display: grid;
+  grid-template-areas: "titulo" "main" "footer";
+}
+
 .tituloContacto {
   margin-top: 27px;
   grid-area: titulo;

@@ -1,0 +1,19 @@
+.h1Pedidos{
+    grid-area: titulo;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.gridPedidos{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "main"
+    "footer";
+}

@@ -1,0 +1,25 @@
+.h1Servicio{
+    grid-area: titulo;
+}
+
+p{
+    grid-area: parrafo;
+    color: white;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.gridServicios{
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "main"
+    "footer";
+}
+
