@@ -184,6 +184,29 @@ main {
   grid-template-areas: "titulo" "main" "footer";
 }
 
+.formPedidos {
+  margin: 0 0 20px 0;
+  padding-left: 25px;
+  width: 500px;
+}
+.formPedidos #form {
+  width: 450px;
+}
+.formPedidos #titPedidos {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .formPedidos {
+    width: 80%;
+  }
+  .formPedidos #form {
+    width: 90%;
+  }
+  .formPedidos #titPedidos {
+    color: white;
+  }
+}
 .h1Servicio {
   grid-area: titulo;
 }
@@ -222,10 +245,11 @@ main {
 .gridContacto {
   display: grid;
   grid-template-areas: "titulo" "main" "footer";
+  grid-row-gap: 30px;
 }
 
 .formContacto {
-  margin: 20px 0 20px 0;
+  margin: 0 0 20px 0;
   padding-left: 25px;
   width: 500px;
 }
@@ -236,7 +260,7 @@ main {
   color: white;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .formContacto {
     width: 80%;
   }

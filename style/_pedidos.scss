@@ -17,3 +17,34 @@ main{
     "main"
     "footer";
 }
+
+.formPedidos{
+    margin: 0 0 20px 0;
+    padding-left: 25px;
+    width: 500px;
+
+    #form{
+        width: 450px;
+    }
+
+    #titPedidos{
+        color: white;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .formPedidos{
+        width: 80%;
+
+        #form{
+            width: 90%;
+        }
+    
+        #titPedidos{
+            color: white;
+        }
+    }
+
+}
