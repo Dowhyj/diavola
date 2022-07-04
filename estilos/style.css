@@ -298,6 +298,14 @@ main {
   text-align: start;
 }
 
+@media (max-width: 500px) {
+  .formCatering {
+    width: 80%;
+  }
+  .formCatering #form {
+    width: 90%;
+  }
+}
 .tituloContacto {
   margin-top: 27px;
   grid-area: titulo;

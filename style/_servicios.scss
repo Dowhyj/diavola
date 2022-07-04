@@ -64,3 +64,14 @@
         text-align: start;
     }
 }
+
+@media (max-width:500px){
+
+    .formCatering{
+        width: 80%;
+
+        #form{
+            width: 90%;
+        }
+    }
+}
