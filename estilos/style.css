@@ -109,7 +109,7 @@ main .formCatering {
 main .formCatering #form {
   width: 450px;
 }
-main .formCatering #titContacto {
+main .formCatering #titCatering {
   color: white;
 }
 main .footerIndex {
@@ -236,6 +236,17 @@ main {
   color: white;
 }
 
+@media (max-width: 480px) {
+  .formContacto {
+    width: 80%;
+  }
+  .formContacto #form {
+    width: 90%;
+  }
+  .formContacto #titContacto {
+    color: white;
+  }
+}
 /* SECCION INICIO */
 h1 {
   color: rgb(77, 199, 72);

@@ -36,3 +36,18 @@ main{
 
 }
 
+@media (max-width:480px){
+
+    .formContacto{
+        width: 80%;
+
+        #form{
+            width: 90%;
+        }
+    
+        #titContacto{
+            color: white;
+        }
+    }
+
+}
