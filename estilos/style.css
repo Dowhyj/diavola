@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Nuosu+SIL&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Nuosu+SIL&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Trispace:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Nuosu+SIL&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Trispace:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -46,7 +47,79 @@ footer {
 
 #instagram {
   color: black;
-  text-decoration: underline;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+main .h1Index {
+  margin: 30px;
+  padding: 0 20px 10px 20px;
+  font-family: "Nuosu SIL";
+  color: whitesmoke;
+  background-color: rgb(77, 199, 72);
+  text-align: center;
+}
+main #video {
+  margin: 0 0 0 15px;
+}
+main .carrousel {
+  margin: 5px 0 0 15px;
+  height: 534px;
+  width: 400px;
+}
+main .h2Index {
+  margin: 30px;
+  padding: 0 20px 10px 20px;
+  font-family: "Nuosu SIL";
+  color: whitesmoke;
+  background-color: rgb(77, 199, 72);
+  text-align: center;
+}
+main .cateringIndex {
+  font-size: 30px;
+  margin: 20px;
+  padding: 0 15px 5px 15px;
+  font-family: "Nuosu SIL";
+  color: whitesmoke;
+  background-color: rgb(77, 199, 72);
+  text-align: center;
+}
+main .h3Index {
+  color: whitesmoke;
+  font-size: 35px;
+}
+main .botonPedir .pedir {
+  height: 70px;
+  width: 120px;
+  padding: 0 10px 0 0;
+  font-family: "Nuosu SIL";
+  color: whitesmoke;
+  background-color: rgb(77, 199, 72);
+}
+main .formCatering {
+  margin: 20px 0 20px 0;
+  padding-left: 25px;
+  width: 500px;
+}
+main .formCatering #form {
+  width: 450px;
+}
+main .formCatering #titContacto {
+  color: white;
+}
+main .footerIndex {
+  grid-area: footer;
+}
+
+.gridIndex {
+  display: grid;
+  grid-template-areas: "main" "footer";
+  grid-row-gap: 100px;
 }
 
 .menu {
@@ -56,7 +129,7 @@ footer {
   flex-wrap: wrap;
 }
 
-footer {
+.footerMenu {
   grid-area: footer;
 }
 
@@ -102,7 +175,7 @@ main {
   grid-area: main;
 }
 
-footer {
+.footerPedidos {
   grid-area: footer;
 }
 
@@ -120,11 +193,11 @@ p {
   color: white;
 }
 
-main {
+.mainServicios {
   grid-area: main;
 }
 
-footer {
+.footerServicios {
   grid-area: footer;
 }
 
@@ -142,7 +215,7 @@ main {
   grid-area: main;
 }
 
-footer {
+.footerContacto {
   grid-area: footer;
 }
 
