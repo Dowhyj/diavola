@@ -1,25 +1,66 @@
-.h1Servicio{
-    grid-area: titulo;
-}
-
-p{
-    grid-area: parrafo;
-    color: white;
-}
-
-.mainServicios{
-    grid-area: main;
-}
-
-.footerServicios{
-    grid-area: footer;
-}
-
-.gridServicios{
+.gridServicios {
     display: grid;
-    grid-template-areas: 
-    "titulo"
-    "main"
-    "footer";
-}
+    grid-template-areas:
+        "titulo"
+        "titulo2"
+        "main"
+        "footer";
 
+    text-align: center;
+
+    .h1Servicio {
+        grid-area: titulo;
+        margin: 20px 0 0 20px;
+    }
+
+    .h2Servicio {
+        grid-area: titulo2;
+        margin-left: 20px;
+        color: rgb(187, 66, 50);
+    }
+
+    .mainServicios {
+        grid-area: main;
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        ul {
+            width: 100%;
+
+            li {
+                color: whitesmoke;
+            }
+        }
+
+        .consultaCatering {
+            display: flex;
+            flex-direction: column;
+
+            .h3Servicio {
+                color: whitesmoke;
+            }
+
+            .formCatering {
+                margin: 20px 0 20px 0;
+                padding-left: 25px;
+                width: 500px;
+                text-align: start;
+
+                #form {
+                    width: 450px;
+                }
+
+                #titCatering {
+                    color: white;
+                }
+
+            }
+        }
+    }
+
+    .footerServicios {
+        grid-area: footer;
+        text-align: start;
+    }
+}

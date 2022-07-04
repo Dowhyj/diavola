@@ -65,19 +65,29 @@ main {
         }
     }
 
-    .formCatering {
-        margin: 20px 0 20px 0;
-        padding-left: 25px;
-        width: 500px;
+    .consultaCatering {
+        display: flex;
+        flex-direction: column;
 
-        #form {
-            width: 450px;
+        .h3Servicio {
+            color: whitesmoke;
         }
 
-        #titCatering {
-            color: white;
-        }
+        .formCatering {
+            margin: 20px 0 20px 0;
+            padding-left: 25px;
+            width: 500px;
+            text-align: start;
 
+            #form {
+                width: 450px;
+            }
+
+            #titCatering {
+                color: white;
+            }
+
+        }
     }
 
     .footerIndex {
