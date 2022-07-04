@@ -193,6 +193,12 @@ main .footerIndex {
   color: rgb(253, 33, 33);
 }
 
+@media (max-width: 659px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
 .h1Pedidos {
   grid-area: titulo;
 }
