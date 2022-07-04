@@ -122,6 +122,32 @@ main .footerIndex {
   grid-row-gap: 100px;
 }
 
+@media (max-width: 500px) {
+  .h1Index {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  #video {
+    width: 75%;
+    height: 275px;
+  }
+
+  .botonPedir {
+    margin: 20px;
+  }
+
+  .h3Index {
+    margin-left: 20px;
+  }
+
+  .formCatering {
+    width: 80%;
+  }
+  .formCatering #form {
+    width: 90%;
+  }
+}
 .menu {
   grid-area: menu;
   display: flex;
@@ -203,9 +229,6 @@ main {
   .formPedidos #form {
     width: 90%;
   }
-  .formPedidos #titPedidos {
-    color: white;
-  }
 }
 .h1Servicio {
   grid-area: titulo;
@@ -266,9 +289,6 @@ main {
   }
   .formContacto #form {
     width: 90%;
-  }
-  .formContacto #titContacto {
-    color: white;
   }
 }
 /* SECCION INICIO */

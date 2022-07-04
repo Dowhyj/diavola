@@ -37,7 +37,7 @@ main {
         text-align: center;
     }
 
-    .cateringIndex{
+    .cateringIndex {
         font-size: 30px;
         margin: 20px;
         padding: 0 15px 5px 15px;
@@ -47,7 +47,7 @@ main {
         text-align: center;
     }
 
-    .h3Index{
+    .h3Index {
         color: whitesmoke;
         font-size: 35px;
     }
@@ -65,19 +65,19 @@ main {
         }
     }
 
-    .formCatering{
+    .formCatering {
         margin: 20px 0 20px 0;
         padding-left: 25px;
         width: 500px;
-    
-        #form{
+
+        #form {
             width: 450px;
         }
-    
-        #titCatering{
+
+        #titCatering {
             color: white;
         }
-    
+
     }
 
     .footerIndex {
@@ -92,4 +92,34 @@ main {
         "footer";
 
     grid-row-gap: 100px;
+}
+
+@media (max-width:500px) {
+
+    .h1Index {
+        // width: 80%;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #video {
+        width: 75%;
+        height: 275px;
+    }
+
+    .botonPedir {
+        margin: 20px;
+    }
+
+    .h3Index {
+        margin-left: 20px;
+    }
+
+    .formCatering{
+        width: 80%;
+
+        #form{
+            width: 90%;
+        }
+    }
 }
