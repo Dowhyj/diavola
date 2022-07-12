@@ -3,13 +3,13 @@
 main {
     grid-area: main;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     height: 100%;
 
     .h1Index {
+        align-self: center;
         margin: 30px;
-        width: 80%;
+        width: 45%;
 
         #h1Index {
             padding: 0 20px 10px 20px;
@@ -21,12 +21,27 @@ main {
     }
 
     #video {
-        margin: 0 0 0 15px;
+        align-self: center;
+    }
+
+    .h2Index {
+        align-self: center;
+        width: 45%;
+        margin: 30px;
+
+        #h2Index {
+            padding: 0 20px 10px 20px;
+            font-family: 'Nuosu SIL';
+            color: whitesmoke;
+            background-color: rgb(77, 199, 72);
+            text-align: center;
+        }
     }
 
     .pedirInicio {
         display: flex;
         flex-direction: column;
+        align-self: center;
 
         .carrousel {
             margin: 5px 0 0 15px;
@@ -49,19 +64,6 @@ main {
         }
     }
 
-    .h2Index {
-        width: 80%;
-        margin: 30px;
-
-        #h2Index {
-            padding: 0 20px 10px 20px;
-            font-family: 'Nuosu SIL';
-            color: whitesmoke;
-            background-color: rgb(77, 199, 72);
-            text-align: center;
-        }
-    }
-
     .cateringIndex {
         font-size: 30px;
         margin: 20px;
@@ -75,11 +77,13 @@ main {
     .h3Index {
         color: whitesmoke;
         font-size: 35px;
+        text-align: center;
     }
 
     .consultaCatering {
         display: flex;
         flex-direction: column;
+        align-self: center;
 
         .h3Servicio {
             color: whitesmoke;

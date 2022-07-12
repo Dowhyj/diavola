@@ -56,13 +56,13 @@ footer {
 main {
   grid-area: main;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   height: 100%;
 }
 main .h1Index {
+  align-self: center;
   margin: 30px;
-  width: 80%;
+  width: 45%;
 }
 main .h1Index #h1Index {
   padding: 0 20px 10px 20px;
@@ -72,11 +72,24 @@ main .h1Index #h1Index {
   text-align: center;
 }
 main #video {
-  margin: 0 0 0 15px;
+  align-self: center;
+}
+main .h2Index {
+  align-self: center;
+  width: 45%;
+  margin: 30px;
+}
+main .h2Index #h2Index {
+  padding: 0 20px 10px 20px;
+  font-family: "Nuosu SIL";
+  color: whitesmoke;
+  background-color: rgb(77, 199, 72);
+  text-align: center;
 }
 main .pedirInicio {
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 main .pedirInicio .carrousel {
   margin: 5px 0 0 15px;
@@ -95,17 +108,6 @@ main .pedirInicio .botonPedir #pedir {
   color: whitesmoke;
   background-color: rgb(77, 199, 72);
 }
-main .h2Index {
-  width: 80%;
-  margin: 30px;
-}
-main .h2Index #h2Index {
-  padding: 0 20px 10px 20px;
-  font-family: "Nuosu SIL";
-  color: whitesmoke;
-  background-color: rgb(77, 199, 72);
-  text-align: center;
-}
 main .cateringIndex {
   font-size: 30px;
   margin: 20px;
@@ -118,10 +120,12 @@ main .cateringIndex {
 main .h3Index {
   color: whitesmoke;
   font-size: 35px;
+  text-align: center;
 }
 main .consultaCatering {
   display: flex;
   flex-direction: column;
+  align-self: center;
 }
 main .consultaCatering .h3Servicio {
   color: whitesmoke;
