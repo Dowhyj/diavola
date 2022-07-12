@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Mukta:wght@200&family=Noto+Serif&family=Nuosu+SIL&family=Oswald:wght@200&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@100&family=Trispace:wght@200&display=swap');
 
-main {
-    grid-area: main;
+.mainIndex {
+    grid-area: mainIndex;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -115,7 +115,7 @@ main {
 .gridIndex {
     display: grid;
     grid-template-areas:
-        "main"
+        "mainIndex"
         "footer";
 
     grid-row-gap: 100px;

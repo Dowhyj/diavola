@@ -1,57 +1,59 @@
-.menu{
-    grid-area: menu;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footerMenu{
-    grid-area: footer;
-}
-
-.gridMenu{
+.gridMenu {
     display: grid;
-    grid-template-areas: 
-    "menu"
-    "footer";
+    grid-template-areas:
+        "menu"
+        "footer";
 
     grid-row-gap: 50px;
 }
 
-.pizza{
-    width: 330px;
+.menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 20px 0 20px;
 
-    .titulosMenu{
-        padding-top: 20px;
-        width: 100%;
-        font-size: 35px;
-        font-weight: bold;
-        text-align: center;
-        color: rgb(0, 168, 0);
-    }
-    .pizzaMenu{
-         height: 400px;
-         width: 330px;
-    }
+    .pizza {
+        width: 330px;
 
-    .pieMenu{
-    padding-top: 10px;
-    width: 330px;
-    font-size: 20px;
-    color: rgb(253, 33, 33);
-    }
+        .titulosMenu {
+            padding-top: 20px;
+            width: 100%;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(0, 168, 0);
+        }
 
-    .precio{
-        padding-top: 10px;
-        font-size: 25px;
-        width: auto;
-        color: rgb(253, 33, 33);
-    } 
+        .pizzaMenu {
+            height: 400px;
+            width: 330px;
+        }
+
+        .pieMenu {
+            padding-top: 10px;
+            width: 330px;
+            font-size: 20px;
+            color: rgb(253, 33, 33);
+        }
+
+        .precio {
+            padding-top: 10px;
+            font-size: 25px;
+            width: auto;
+            color: rgb(253, 33, 33);
+        }
+    }
 }
 
-@media (max-width:659px){
+.footerMenu {
+    grid-area: footer;
+}
 
-    .menu{
+@media (max-width:659px) {
+
+    .menu {
         display: flex;
         justify-content: center;
     }

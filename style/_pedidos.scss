@@ -2,8 +2,8 @@
     grid-area: titulo;
 }
 
-main{
-    grid-area: main;
+.mainPedidos{
+    grid-area: mainPedidos;
 }
 
 .footerPedidos{
@@ -14,7 +14,7 @@ main{
     display: grid;
     grid-template-areas: 
     "titulo"
-    "main"
+    "mainPedidos"
     "footer";
 }
 

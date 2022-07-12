@@ -3,10 +3,11 @@
     grid-template-areas:
         "titulo"
         "titulo2"
-        "main"
+        "mainServicios"
         "footer";
 
     text-align: center;
+    grid-row-gap: 10px;
 
     .h1Servicio {
         grid-area: titulo;
@@ -20,10 +21,9 @@
     }
 
     .mainServicios {
-        grid-area: main;
+        grid-area: mainServicios;
         display: flex;
-        align-content: flex-start;
-        flex-wrap: wrap;
+        flex-direction: column;
 
         ul {
             width: 100%;
@@ -34,8 +34,7 @@
         }
 
         .consultaCatering {
-            display: flex;
-            flex-direction: column;
+            align-self: center;
 
             .h3Servicio {
                 color: whitesmoke;

@@ -53,54 +53,54 @@ footer {
   color: black;
 }
 
-main {
-  grid-area: main;
+.mainIndex {
+  grid-area: mainIndex;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-main .h1Index {
+.mainIndex .h1Index {
   align-self: center;
   margin: 30px;
   width: 45%;
 }
-main .h1Index #h1Index {
+.mainIndex .h1Index #h1Index {
   padding: 0 20px 10px 20px;
   font-family: "Nuosu SIL";
   color: whitesmoke;
   background-color: rgb(77, 199, 72);
   text-align: center;
 }
-main #video {
+.mainIndex #video {
   align-self: center;
 }
-main .h2Index {
+.mainIndex .h2Index {
   align-self: center;
   width: 45%;
   margin: 30px;
 }
-main .h2Index #h2Index {
+.mainIndex .h2Index #h2Index {
   padding: 0 20px 10px 20px;
   font-family: "Nuosu SIL";
   color: whitesmoke;
   background-color: rgb(77, 199, 72);
   text-align: center;
 }
-main .pedirInicio {
+.mainIndex .pedirInicio {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
-main .pedirInicio .carrousel {
+.mainIndex .pedirInicio .carrousel {
   margin: 5px 0 0 15px;
   height: 534px;
   width: 400px;
 }
-main .pedirInicio .botonPedir {
+.mainIndex .pedirInicio .botonPedir {
   margin: 20px;
   text-align: center;
 }
-main .pedirInicio .botonPedir #pedir {
+.mainIndex .pedirInicio .botonPedir #pedir {
   height: 70px;
   width: 120px;
   padding: 0 10px 0 10px;
@@ -108,7 +108,7 @@ main .pedirInicio .botonPedir #pedir {
   color: whitesmoke;
   background-color: rgb(77, 199, 72);
 }
-main .cateringIndex {
+.mainIndex .cateringIndex {
   font-size: 30px;
   margin: 20px;
   padding: 0 15px 5px 15px;
@@ -117,30 +117,30 @@ main .cateringIndex {
   background-color: rgb(77, 199, 72);
   text-align: center;
 }
-main .h3Index {
+.mainIndex .h3Index {
   color: whitesmoke;
   font-size: 35px;
   text-align: center;
 }
-main .consultaCatering {
+.mainIndex .consultaCatering {
   display: flex;
   flex-direction: column;
   align-self: center;
 }
-main .consultaCatering .h3Servicio {
+.mainIndex .consultaCatering .h3Servicio {
   color: whitesmoke;
 }
-main .consultaCatering .formCatering {
+.mainIndex .consultaCatering .formCatering {
   margin: 20px 0 20px 0;
   padding-left: 25px;
   width: 87%;
   text-align: start;
   align-self: center;
 }
-main .consultaCatering .formCatering #form {
+.mainIndex .consultaCatering .formCatering #form {
   width: 450px;
 }
-main .consultaCatering .formCatering #titCatering {
+.mainIndex .consultaCatering .formCatering #titCatering {
   color: white;
 }
 
@@ -150,7 +150,7 @@ main .consultaCatering .formCatering #titCatering {
 
 .gridIndex {
   display: grid;
-  grid-template-areas: "main" "footer";
+  grid-template-areas: "mainIndex" "footer";
   grid-row-gap: 100px;
 }
 
@@ -176,27 +176,23 @@ main .consultaCatering .formCatering #titCatering {
     width: 90%;
   }
 }
-.menu {
-  grid-area: menu;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footerMenu {
-  grid-area: footer;
-}
-
 .gridMenu {
   display: grid;
   grid-template-areas: "menu" "footer";
   grid-row-gap: 50px;
 }
 
-.pizza {
+.menu {
+  grid-area: menu;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 20px 0 20px;
+}
+.menu .pizza {
   width: 330px;
 }
-.pizza .titulosMenu {
+.menu .pizza .titulosMenu {
   padding-top: 20px;
   width: 100%;
   font-size: 35px;
@@ -204,21 +200,25 @@ main .consultaCatering .formCatering #titCatering {
   text-align: center;
   color: rgb(0, 168, 0);
 }
-.pizza .pizzaMenu {
+.menu .pizza .pizzaMenu {
   height: 400px;
   width: 330px;
 }
-.pizza .pieMenu {
+.menu .pizza .pieMenu {
   padding-top: 10px;
   width: 330px;
   font-size: 20px;
   color: rgb(253, 33, 33);
 }
-.pizza .precio {
+.menu .pizza .precio {
   padding-top: 10px;
   font-size: 25px;
   width: auto;
   color: rgb(253, 33, 33);
+}
+
+.footerMenu {
+  grid-area: footer;
 }
 
 @media (max-width: 659px) {
@@ -231,8 +231,8 @@ main .consultaCatering .formCatering #titCatering {
   grid-area: titulo;
 }
 
-main {
-  grid-area: main;
+.mainPedidos {
+  grid-area: mainPedidos;
 }
 
 .footerPedidos {
@@ -241,7 +241,7 @@ main {
 
 .gridPedidos {
   display: grid;
-  grid-template-areas: "titulo" "main" "footer";
+  grid-template-areas: "titulo" "mainPedidos" "footer";
 }
 
 .formPedidos {
@@ -266,8 +266,9 @@ main {
 }
 .gridServicios {
   display: grid;
-  grid-template-areas: "titulo" "titulo2" "main" "footer";
+  grid-template-areas: "titulo" "titulo2" "mainServicios" "footer";
   text-align: center;
+  grid-row-gap: 10px;
 }
 .gridServicios .h1Servicio {
   grid-area: titulo;
@@ -279,10 +280,9 @@ main {
   color: rgb(187, 66, 50);
 }
 .gridServicios .mainServicios {
-  grid-area: main;
+  grid-area: mainServicios;
   display: flex;
-  align-content: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 .gridServicios .mainServicios ul {
   width: 100%;
@@ -291,8 +291,7 @@ main {
   color: whitesmoke;
 }
 .gridServicios .mainServicios .consultaCatering {
-  display: flex;
-  flex-direction: column;
+  align-self: center;
 }
 .gridServicios .mainServicios .consultaCatering .h3Servicio {
   color: whitesmoke;
@@ -327,7 +326,7 @@ main {
   grid-area: titulo;
 }
 
-main {
+.mainContacto {
   grid-area: main;
 }
 
