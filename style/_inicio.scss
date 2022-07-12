@@ -9,32 +9,57 @@ main {
 
     .h1Index {
         margin: 30px;
-        padding: 0 20px 10px 20px;
-        // width: 720px;
-        font-family: 'Nuosu SIL';
-        color: whitesmoke;
-        background-color: rgb(77, 199, 72);
-        ;
-        text-align: center;
+        width: 80%;
+
+        #h1Index {
+            padding: 0 20px 10px 20px;
+            font-family: 'Nuosu SIL';
+            color: whitesmoke;
+            background-color: rgb(77, 199, 72);
+            text-align: center;
+        }
     }
 
     #video {
         margin: 0 0 0 15px;
     }
 
-    .carrousel {
-        margin: 5px 0 0 15px;
-        height: 534px;
-        width: 400px;
+    .pedirInicio {
+        display: flex;
+        flex-direction: column;
+
+        .carrousel {
+            margin: 5px 0 0 15px;
+            height: 534px;
+            width: 400px;
+        }
+
+        .botonPedir {
+            margin: 20px;
+            text-align: center;
+            
+            #pedir {
+                height: 70px;
+                width: 120px;
+                padding: 0 10px 0 10px;
+                font-family: 'Nuosu SIL';
+                color: whitesmoke;
+                background-color: rgb(77, 199, 72);
+            }
+        }
     }
 
     .h2Index {
+        width: 80%;
         margin: 30px;
-        padding: 0 20px 10px 20px;
-        font-family: 'Nuosu SIL';
-        color: whitesmoke;
-        background-color: rgb(77, 199, 72);
-        text-align: center;
+
+        #h2Index {
+            padding: 0 20px 10px 20px;
+            font-family: 'Nuosu SIL';
+            color: whitesmoke;
+            background-color: rgb(77, 199, 72);
+            text-align: center;
+        }
     }
 
     .cateringIndex {
@@ -52,19 +77,6 @@ main {
         font-size: 35px;
     }
 
-    .botonPedir {
-        // align-content: flex-end;
-
-        .pedir {
-            height: 70px;
-            width: 120px;
-            padding: 0 10px 0 0;
-            font-family: 'Nuosu SIL';
-            color: whitesmoke;
-            background-color: rgb(77, 199, 72);
-        }
-    }
-
     .consultaCatering {
         display: flex;
         flex-direction: column;
@@ -76,8 +88,9 @@ main {
         .formCatering {
             margin: 20px 0 20px 0;
             padding-left: 25px;
-            width: 500px;
+            width: 87%;
             text-align: start;
+            align-self: center;
 
             #form {
                 width: 450px;
@@ -89,10 +102,10 @@ main {
 
         }
     }
+}
 
-    .footerIndex {
-        grid-area: footer;
-    }
+.footerIndex {
+    grid-area: footer;
 }
 
 .gridIndex {
@@ -104,7 +117,7 @@ main {
     grid-row-gap: 100px;
 }
 
-@media (max-width:500px) {
+@media (min-width:320px) and (max-width:480px) {
 
     .h1Index {
         // width: 80%;
@@ -125,10 +138,10 @@ main {
         margin-left: 20px;
     }
 
-    .formCatering{
+    .formCatering {
         width: 80%;
 
-        #form{
+        #form {
             width: 90%;
         }
     }

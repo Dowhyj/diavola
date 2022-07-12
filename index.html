@@ -22,7 +22,7 @@
             <a href="./index.html">
                 <img class="imgHeader" src="./img/logo2.jpg" alt="logo">
             </a>
-            <a class="navbar-brand d-flex align-items-center" id="textoLogo" href="./index.html">Diávola Pizza</a>
+            <a class="navbar-brand d-flex align-items-center" id="textoLogo" href="./index.html">Diávola</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -45,8 +45,11 @@
 
         <main>
 
-            <h1 class="h1Index border border-3 border-danger rounded-pill"> Pizza napolitana en la comodidad de tu casa
-            </h1>
+            <div class="h1Index">
+                <h1 class="border border-3 border-danger rounded-pill" id="h1Index"> Pizza napolitana en la comodidad de
+                    tu casa
+                </h1>
+            </div>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ViLM8GDoit0"
                 title="YouTube video player" frameborder="0"
@@ -54,47 +57,52 @@
                 allowfullscreen id="video">
             </iframe>
 
-            <h2 class="h2Index border border-3 border-danger rounded-pill">Podes retirarlas personalmente o te las
-                llevamos a tu casa</h2>
+            <div class="h2Index">
+                <h2 class="border border-3 border-danger rounded-pill" id="h2Index">Podes retirarlas personalmente o te
+                    las llevamos a tu casa</h2>
+            </div>
 
-            <div class="carrousel">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="img/IMG-20220504-WA0021.jpg" class="d-block w-100" id="imgCarrousel" alt="...">
+            <div class="pedirInicio">
+                <div class="carrousel">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/IMG-20220504-WA0021.jpg" class="d-block w-100" id="imgCarrousel"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="img/marga3.jpg" class="d-block w-100" id="imgCarrousel" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/pesto3.jpg" class="d-block w-100" id="imgCarrousel" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/IMG-20220504-WA0023.jpg" class="d-block w-100" id="imgCarrousel"
+                                    alt="...">
+                            </div>
                         </div>
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="img/marga3.jpg" class="d-block w-100" id="imgCarrousel" alt="...">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="img/pesto3.jpg" class="d-block w-100" id="imgCarrousel" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="img/IMG-20220504-WA0023.jpg" class="d-block w-100" id="imgCarrousel" alt="...">
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                </div>
+
+                <div class="botonPedir">
+                    <a class="border border-3 border-danger rounded-pill" id="pedir"
+                        href="./secciones/pedidos.html">Pedir</a>
                 </div>
             </div>
-
-            <div class="botonPedir">
-                <a class="pedir border border-3 border-danger rounded-pill" href="./secciones/pedidos.html">Pedir</a>
-            </div>
-
-            <!-- <h3 class="h3Index border border-3 border-danger rounded-pill">También contamos con servicio de catering para cualquier tipo de evento</h3> -->
-
-            <a class="cateringIndex border border-3 border-danger rounded-pill"
+            
+            <!-- <a class="cateringIndex border border-3 border-danger rounded-pill"
                 href="./secciones/servicios.html">También contamos con servicio de catering para cualquier tipo de
-                evento</a>
+                evento</a> -->
 
             <div class="consultaCatering">
 
@@ -121,7 +129,7 @@
                     <div class="mb-4" id="form">
                         <label for="exampleFormControlTextarea1" class="form-label" id="titCatering">Ingrese su
                             consulta</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                     </div>
 
                     <div class="mb-4 d-flex justify-content-center">
