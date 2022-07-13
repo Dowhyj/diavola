@@ -322,13 +322,15 @@ footer {
   }
   .menu .pizza .pieMenu {
     text-align: center;
+    align-self: center;
     padding-top: 10px;
-    width: 330px;
+    height: 50px;
+    width: 230px;
     font-size: 15px;
   }
   .menu .pizza .precio {
-    padding: 10px 0 0 23px;
-    font-size: 20px;
+    text-align: center;
+    font-size: 15px;
     width: auto;
   }
 }
