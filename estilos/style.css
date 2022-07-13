@@ -298,10 +298,38 @@ footer {
   grid-area: footer;
 }
 
-@media (max-width: 659px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .menu {
     display: flex;
+    margin: 0 20px 0 20px;
     justify-content: center;
+  }
+  .menu .pizza {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    align-content: center;
+  }
+  .menu .pizza .titulosMenu {
+    padding-top: 0;
+    font-size: 35px;
+    text-align: center;
+  }
+  .menu .pizza .pizzaMenu {
+    align-self: center;
+    height: 300px;
+    width: 230px;
+  }
+  .menu .pizza .pieMenu {
+    text-align: center;
+    padding-top: 10px;
+    width: 330px;
+    font-size: 15px;
+  }
+  .menu .pizza .precio {
+    padding: 10px 0 0 23px;
+    font-size: 20px;
+    width: auto;
   }
 }
 .h1Pedidos {
