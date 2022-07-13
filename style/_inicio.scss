@@ -177,3 +177,55 @@
         }
     }
 }
+
+@media (min-width:481px) and (max-width:768px) {
+
+    .mainIndex {
+        width: 100%;
+
+        .h1Index {
+            width: 90%;
+
+            #h1Index {
+                font-size: 35px;
+            }
+        }
+
+        #video {
+            width: 75%;
+            height: 375px;
+        }
+
+        .h2Index {
+            width: 90%;
+
+            #h2Index {
+                font-size: 30px;
+            }
+        }
+
+        .h3Index {
+            width: 90%;
+            margin: 10px 0 0 20px;
+            font-size: 27px;
+        }
+
+        .consultaCatering {
+            width: 100%;
+
+            .formCatering {
+                width: 90%;
+                padding: 0 0 0 40px;
+
+                #form {
+                    width: 80%;
+
+                    #exampleFormControlInput1,
+                    #exampleFormControlTextarea1 {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

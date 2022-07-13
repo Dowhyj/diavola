@@ -213,6 +213,46 @@ footer {
     width: 100%;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .mainIndex {
+    width: 100%;
+  }
+  .mainIndex .h1Index {
+    width: 90%;
+  }
+  .mainIndex .h1Index #h1Index {
+    font-size: 35px;
+  }
+  .mainIndex #video {
+    width: 75%;
+    height: 375px;
+  }
+  .mainIndex .h2Index {
+    width: 90%;
+  }
+  .mainIndex .h2Index #h2Index {
+    font-size: 30px;
+  }
+  .mainIndex .h3Index {
+    width: 90%;
+    margin: 10px 0 0 20px;
+    font-size: 27px;
+  }
+  .mainIndex .consultaCatering {
+    width: 100%;
+  }
+  .mainIndex .consultaCatering .formCatering {
+    width: 90%;
+    padding: 0 0 0 40px;
+  }
+  .mainIndex .consultaCatering .formCatering #form {
+    width: 80%;
+  }
+  .mainIndex .consultaCatering .formCatering #form #exampleFormControlInput1,
+.mainIndex .consultaCatering .formCatering #form #exampleFormControlTextarea1 {
+    width: 100%;
+  }
+}
 .gridMenu {
   display: grid;
   grid-template-areas: "menu" "footer";
