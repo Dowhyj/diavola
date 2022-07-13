@@ -23,7 +23,7 @@ a {
     color: black;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
@@ -53,4 +53,28 @@ footer {
 
 #instagram {
     color: black;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+
+    a {
+        font-size: 25px;
+    }
+
+    #header {
+
+        #textoLogo {
+
+            height: 110px;
+            width: 135px;
+            padding-left: 10px;
+            font-size: 35px;
+        }
+
+        .imgHeader {
+            height: 85px;
+            width: 85px;
+            border-radius: 50%;
+        }
+    }
 }

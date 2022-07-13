@@ -53,6 +53,22 @@ footer {
   color: black;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  a {
+    font-size: 25px;
+  }
+  #header #textoLogo {
+    height: 110px;
+    width: 135px;
+    padding-left: 10px;
+    font-size: 35px;
+  }
+  #header .imgHeader {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+  }
+}
 .mainIndex {
   grid-area: mainIndex;
   display: flex;
@@ -127,9 +143,6 @@ footer {
   flex-direction: column;
   align-self: center;
 }
-.mainIndex .consultaCatering .h3Servicio {
-  color: whitesmoke;
-}
 .mainIndex .consultaCatering .formCatering {
   margin: 20px 0 20px 0;
   padding-left: 25px;
@@ -155,25 +168,49 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .h1Index {
+  .mainIndex {
+    width: 100%;
+  }
+  .mainIndex .h1Index {
+    width: 90%;
+  }
+  .mainIndex .h1Index #h1Index {
     font-size: 25px;
-    text-align: center;
   }
-  #video {
+  .mainIndex #video {
     width: 75%;
-    height: 275px;
+    height: 225px;
   }
-  .botonPedir {
-    margin: 20px;
+  .mainIndex .h2Index {
+    width: 90%;
   }
-  .h3Index {
-    margin-left: 20px;
+  .mainIndex .h2Index #h2Index {
+    font-size: 25px;
   }
-  .formCatering {
+  .mainIndex .pedirInicio .carrousel {
+    align-self: center;
+    margin: 0 10px 0 0;
+    height: auto;
     width: 80%;
   }
-  .formCatering #form {
+  .mainIndex .h3Index {
     width: 90%;
+    margin: 10px 0 0 20px;
+    font-size: 27px;
+  }
+  .mainIndex .consultaCatering {
+    width: 100%;
+  }
+  .mainIndex .consultaCatering .formCatering {
+    width: 90%;
+    padding: 0 0 0 40px;
+  }
+  .mainIndex .consultaCatering .formCatering #form {
+    width: 80%;
+  }
+  .mainIndex .consultaCatering .formCatering #form #exampleFormControlInput1,
+.mainIndex .consultaCatering .formCatering #form #exampleFormControlTextarea1 {
+    width: 100%;
   }
 }
 .gridMenu {
